@@ -17,7 +17,7 @@ public class GenericServiceDaoImpl<T> {
 	public  List<T> getAnyDataGenericType(Class<? extends T> typelass,Session session) {
 		List<T> slist=new ArrayList<T>();
 
-		try
+		try 
 		{
 			Criteria cr = session.createCriteria(typelass);
 			cr.addOrder(Order.desc("vendorId"));
